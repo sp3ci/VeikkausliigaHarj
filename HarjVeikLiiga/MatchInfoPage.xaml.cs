@@ -30,12 +30,17 @@ namespace HarjVeikLiiga
                 AwayTeam.Text = match.AwayTeam.GetName();
                 Result.Text = match.HomeGoals + " - " + match.AwayGoals;
 
-                BitmapImage hLogo = new BitmapImage(new Uri(match.HomeTeam.LogoUrl));
-                HomeTeamLogo.Source = hLogo;
-
-                BitmapImage aLogo = new BitmapImage(new Uri(match.AwayTeam.LogoUrl));
-                AwayTeamLogo.Source = aLogo;
+                HomeTeamLogo.Source = setupImage(match.HomeTeam.LogoUrl);
+                AwayTeamLogo.Source = setupImage(match.AwayTeam.LogoUrl);
             }
+        }
+
+        private BitmapImage setupImage(string sourceURI)
+        {
+            BitmapImage hLogo = new BitmapImage();
+            hLogo.DecodePixelWidth = 117;
+            hLogo.UriSource = new Uri(sourceURI);
+            return hLogo;
         }
     }
 }

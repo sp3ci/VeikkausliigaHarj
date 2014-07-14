@@ -10,8 +10,8 @@
     Foreground="{StaticResource PhoneForegroundBrush}" d:DesignWidth="480" Height="59">
 
     <Grid x:Name="LayoutRoot">
-        <TextBlock x:Name="joukkue1" TextWrapping="Wrap" Text="Joukkue1" Margin="0,0,295,0" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Right" />
-        <TextBlock x:Name="joukkue2" TextWrapping="Wrap" Text="Joukkue2" Margin="295,0,0,0" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" />
+        <TextBlock x:Name="HomeTeam" TextWrapping="Wrap" Text="HomeTeam" Margin="0,0,295,0" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Right" />
+        <TextBlock x:Name="AwayTeam" TextWrapping="Wrap" Text="AwayTeam" Margin="295,0,0,0" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" />
         <TextBlock x:Name="tulos" HorizontalAlignment="Center" TextWrapping="Wrap" Text="0 - 0" VerticalAlignment="Center" FontSize="25"/>
         <HyperlinkButton HorizontalAlignment="Left" VerticalAlignment="Top" Height="59" Width="480" Click="HyperlinkButton_Click"/>
     </Grid>

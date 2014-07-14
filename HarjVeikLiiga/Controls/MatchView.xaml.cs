@@ -16,19 +16,19 @@ namespace HarjVeikLiiga.Controls
         private Match match;
         private string JSONMatch;
 
-        public MatchView(string joukkue1, string joukkue2, string tulos)
+        public MatchView(string HomeTeam, string AwayTeam, string Result)
         {
             InitializeComponent();
-            this.joukkue1.Text = joukkue1;
-            this.joukkue2.Text = joukkue2;
-            this.tulos.Text = tulos;
+            this.HomeTeam.Text = HomeTeam;
+            this.AwayTeam.Text = AwayTeam;
+            this.tulos.Text = Result;
         }
 
         public MatchView(Match match)
         {
             InitializeComponent();
-            this.joukkue1.Text = match.HomeTeam.GetName();
-            this.joukkue2.Text = match.AwayTeam.GetName();
+            this.HomeTeam.Text = match.HomeTeam.GetName();
+            this.AwayTeam.Text = match.AwayTeam.GetName();
             this.tulos.Text = match.HomeGoals + " - " + match.AwayGoals;
             this.match = match;
         }

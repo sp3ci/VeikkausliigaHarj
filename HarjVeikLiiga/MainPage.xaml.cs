@@ -47,13 +47,13 @@ namespace HarjVeikLiiga
         {
             dates = new List<DateTime>();
 
-            // Add matches starting from today.
+            // Listataan otteluita tästä päivästä lähtien
             for (int i = 0; i < matches.Count; i++)
             {
                 Match match = matches[i];
                 if (match.MatchDate.Date >= DateTime.Today.Date)
                 {
-                    // Luodaan päivämääränäkymä
+                    // Luodaan päivämääräpalkki
                     if (dates.Count == 0 || dates[dates.Count - 1] != match.MatchDate)
                     {
                         DateView dateView = createDateView(match.MatchDate);
