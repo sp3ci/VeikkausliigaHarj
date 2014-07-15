@@ -26,6 +26,7 @@ namespace HarjVeikLiiga
             if (NavigationContext.QueryString.TryGetValue("msg", out msg))
             {
                 Match match = JsonConvert.DeserializeObject<Match>(msg);
+                Date.Text = match.MatchDate.Day + "." + match.MatchDate.Month + "." + match.MatchDate.Year;
                 HomeTeam.Text = match.HomeTeam.GetName();
                 AwayTeam.Text = match.AwayTeam.GetName();
                 Result.Text = match.HomeGoals + " - " + match.AwayGoals;

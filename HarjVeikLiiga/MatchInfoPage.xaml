@@ -27,12 +27,13 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,348">
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,54,10,266">
+            <TextBlock x:Name="Date" TextAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Date" Width="129" Margin="166,0,165,259"/>
             <TextBlock x:Name="HomeTeam" TextWrapping="Wrap" Text="HomeTeam" Margin="0,0,295,0" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Right" />
             <TextBlock x:Name="AwayTeam" TextWrapping="Wrap" Text="AwayTeam" Margin="295,0,0,0" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Left" />
             <TextBlock x:Name="Result" HorizontalAlignment="Center" TextWrapping="Wrap" Text="0 - 0" VerticalAlignment="Center" FontSize="25"/>
-            <Image x:Name="HomeTeamLogo" HorizontalAlignment="Left" Height="100" Margin="44,8,0,0" VerticalAlignment="Top" Width="117"/>
-            <Image x:Name="AwayTeamLogo" HorizontalAlignment="Left" Height="100" Margin="295,10,0,0" VerticalAlignment="Top" Width="117"/>
+            <Image x:Name="HomeTeamLogo" HorizontalAlignment="Left" Height="88" Margin="44,0,0,165" VerticalAlignment="Bottom" Width="117"/>
+            <Image x:Name="AwayTeamLogo" HorizontalAlignment="Left" Height="88" Margin="295,0,0,165" VerticalAlignment="Bottom" Width="117"/>
         </Grid>
     </Grid>
 

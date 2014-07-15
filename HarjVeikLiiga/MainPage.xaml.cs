@@ -54,7 +54,7 @@ namespace HarjVeikLiiga
                 if (match.MatchDate.Date >= DateTime.Today.Date)
                 {
                     // Luodaan päivämääräpalkki
-                    if (dates.Count == 0 || dates[dates.Count - 1] != match.MatchDate)
+                    if (dates.Count == 0 || dates[dates.Count - 1].Date != match.MatchDate.Date)
                     {
                         DateView dateView = createDateView(match.MatchDate);
                         dates.Add(match.MatchDate);
